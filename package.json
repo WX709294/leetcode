@@ -1,0 +1,19 @@
+{
+  "name": "leetcode",
+  "version": "0.0.1",
+  "description": "leetcode 练习",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WX709294/leetcode.git"
+  },
+  "author": "wuxue",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WX709294/leetcode/issues"
+  },
+  "homepage": "https://github.com/WX709294/leetcode#readme"
+}
