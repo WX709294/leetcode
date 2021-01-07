@@ -40,6 +40,8 @@ var replaceSpace_2 = function(s) {
 
 
 // --- 最优解法
+
+// ---将字符串根据空格分隔成数组
 var replaceSpace_3 = function(s) {
   var arr = s.split(' ')
   var alength = arr.length
