@@ -20,7 +20,7 @@
  // 递归反转链接
 var reversePrint = function(head) {
   if (head === null || head.next === null) return head
-  const p = reverseLink(head.next)
+  let p = reversePrint(head.next)
   head.next.next = head // 指针反转
   head.next = null
   return p // 返回真正的表头
