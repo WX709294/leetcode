@@ -44,4 +44,17 @@ function reverseLink(head) {
 }
 
 
+function reverseList(head) {
+  let prev = null
+  let cur = head
+  while(cur) {
+    const next = cur.next
+    cur.next = head
+    prev = cur
+    cur = next
+  }
+  return prev
+}
+
+
 // https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/solution/javascriptsan-chong-jie-fa-zhan-di-gui-fan-zhuan-s/
