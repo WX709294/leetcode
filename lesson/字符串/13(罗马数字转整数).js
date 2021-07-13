@@ -85,4 +85,5 @@
           hashNum[s[i]] < hashNum[s[i+1]] ? result -= hashNum[s[i]] : result += hashNum[s[i]]
       }
       return result;
-    };
+    };  
+    // https://leetcode-cn.com/problems/roman-to-integer/solution/13-luo-ma-shu-zi-zhuan-zheng-shu-by-alexer-660/
