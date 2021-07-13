@@ -27,5 +27,7 @@ function longestCommonPrefix(nums) {
   return first; // 这一步代表每一轮对比都更新出最新的相同前缀
 }
 
+// https://leetcode-cn.com/problems/longest-common-prefix/solution/yi-ge-yi-ge-bi-jiao-geng-xin-gong-gong-q-qfb8/
+
 // chatAt(index)   index为字符串索引，如果没有提供index，默认为0 
 //  eg: s = "We are happy."   s.charAt(1) == 'e'  s.chatAt(2) == ' '  s.charAt(7) == 'h'
