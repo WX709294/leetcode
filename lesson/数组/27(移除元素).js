@@ -12,15 +12,15 @@
  *      输入：nums = [0,1,2,2,3,0,4,2], val = 2
  *      输出：5, nums = [0,1,4,0,3]
  *      解释：函数应该返回新的长度 5, 并且 nums 中的前五个元素为 0, 1, 3, 0, 4。注意这五个元素可为任意顺序。你不需要考虑数组中超出新长度后面的元素。
- **/ 
+ **/
 
-function removeEle(nums) {
+function removeEle(nums, val) {
   let len = nums.length
   if (len < 0) return 0
   let i = 0
   for (let j = 0; j < len; j++) {
     if (nums[j] != val) {
-      nums[i]  = nums[j]
+      nums[i] = nums[j]
       i++
     }
   }
