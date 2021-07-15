@@ -9,20 +9,20 @@
  *          输入：strs = ["dog","racecar","car"]
  *          输出：""
  *          解释：输入不存在公共前缀。
- **/ 
+ **/
 
 
 function longestCommonPrefix(nums) {
   if (nums.length == 0) return ''
-  let ans = nums[0]
+  let first = nums[0]
   for (let i = 1; i < nums.length; i++) {  //i表示数组中第几个字符串
     //j表示第一个字符串的第j个字符
     let j = 0;   // 为什么需要这样写呢? 因为后面需要利用j这个数字,不能放在for循环里面
-    for(; j<ans.length&& j < nums[i].length; j++) {
-      if(first.charAt(j) !== strs[i].charAt(j)) { break;}// break只是退出内循环
+    for (; j < first.length && j < nums[i].length; j++) {
+      if (first.charAt(j) !== nums[i].charAt(j)) { break; }// break只是退出内循环
     }
     //这里的first 在第一个字符和第二个字符比较之后就会更新
-    first = first.substr(0,j);
+    first = first.substr(0, j);
   }
   return first; // 这一步代表每一轮对比都更新出最新的相同前缀
 }
